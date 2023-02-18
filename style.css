@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:   rgb(238, 236, 236);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+
+.cars{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    line-height: 1.8rem;
+    width: 60%;
+    
+    
+}
+    
+.suv-icon{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.sedan-icon{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.luxury-icon{
+    margin-top:  12px;
+    margin-bottom: 12px;
+}
+.sedan{
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
+   background-color: hsl(31, 77%, 52%);
+   color:  hsla(0, 0%, 100%, 0.75);
+   padding: 30px;
+   /* width: 100%; */
+}
+.p-one{
+    margin-bottom: 50px;
+    /* border: 10px solid red; */
+    font-size: 15px;
+}
+
+.more-one{
+    padding: 10px;
+    border-radius: 1.5rem;
+    border: none;
+    color: hsl(31, 77%, 52%);
+    margin-bottom: 1rem;
+    width: 8rem;
+}
+
+.suvs{
+  background-color: hsl(184, 100%, 22%);
+  padding: 30px;
+  color:  hsla(0, 0%, 100%, 0.75);
+}
+.p-two{
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+.more-two{
+    padding: 10px;
+    border-radius: 1.5rem;
+    border: none;
+    color: hsl(184, 100%, 22%);
+    width: 8rem;
+   margin-bottom: 1rem;
+}
+
+.luxury{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: hsl(179, 100%, 13%);
+    padding: 30px;
+    color:  hsla(0, 0%, 100%, 0.75);
+}
+
+.p-three{
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+.more-three{
+    padding: 10px;
+    border-radius: 1.5rem;
+    border: none;
+    color: hsl(179, 100%, 13%);
+    width: 8rem;
+    margin-bottom: 1rem;
+}
+.suv-header{
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
+   font-family: 'Big Shoulders Display', cursive;
+    
+}
+.sedan-header{
+    padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
+   font-family: 'Big Shoulders Display', cursive;
+    
+}
+.luxury-header{
+    padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
+   font-family: 'Big Shoulders Display', cursive;
+    
+}
+@media only screen and (max-width: 600px) {
+    .cars{
+        display: flex;
+        border: 1px solid red;
+        flex-wrap: wrap;
+    }
+    body{
+        height: 100%;
+      }
+}
