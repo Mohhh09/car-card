@@ -42,7 +42,7 @@ body{
    background-color: hsl(31, 77%, 52%);
    color:  hsla(0, 0%, 100%, 0.75);
    padding: 30px;
-   /* width: 100%; */
+
 }
 .p-one{
     margin-bottom: 50px;
@@ -120,10 +120,24 @@ body{
 @media only screen and (max-width: 600px) {
     .cars{
         display: flex;
-        border: 1px solid red;
         flex-wrap: wrap;
     }
     body{
-        height: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        height: 220vh;
+        max-width: 100%;
+        
       }
+      .sedan{ 
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        }
+      .luxury{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;   
+    }
+    
 }
